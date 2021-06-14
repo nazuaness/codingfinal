@@ -1,0 +1,91 @@
+.header {
+    background-color: #0044be;
+}
+
+.side_bar {
+    padding: 0 30px;
+}
+
+.filter_menu_item {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: .2s;
+}
+
+.filter_menu_item:hover {
+    color: black;
+    border-bottom: 3px solid blue;
+    transition: .2s;
+}
+
+/*gender category*/
+
+.filter_title {
+    border: none;
+    background-color: transparent;
+    font-size: 120%;
+    color: gray;
+    transition: .3s;
+
+}
+
+.filter_title:focus {
+    color: black;
+}
+
+.filter_title:hover {
+    color: black;
+    transition: .3s;
+}
+
+.filter_sub {
+    padding: 0 30px;
+    color: gray;
+}
+
+/*  Товары  */
+
+.item {
+    height: 350px;
+    background-color: #0a53be;
+}
+
+.item_image {
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image:  url(https://storage.vsemayki.ru/images/0/1/1941/1941345/previews/people_4_manshortfull_front_white_500.jpg);*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.item_image:hover .item_qr {
+    opacity: 1;
+    transition: .2s;
+}
+
+.item_image:hover {
+    transition: .2s;
+}
+
+
+.item_link {
+    display: none;
+}
+
+.item_qr {
+    width: 70%;
+    height: 70%;
+    opacity: 0;
+    transition: .2s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: url(https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png);*/
+}
+
