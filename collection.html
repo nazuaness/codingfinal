@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collection</title>
+    <!--  Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!--    здесь твой header-->
+    <div class="header d-flex justify-content-around text-white">
+        <div class="text-uppercase p-3 fs-4">new drop</div>
+        <div class="text-uppercase p-3 fs-4">collections</div>
+        <div class="text-uppercase p-3 fs-4">about us</div>
+        <div class="text-uppercase p-3 fs-4">sign in</div>
+        <div class="text-uppercase p-3 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+        </div>
+    </div>
+<!--  Главный блок  -->
+    <div class="main_block row my-1 p-3">
+        <div class="col-12 filter_menu d-flex justify-content-around">
+            <a href="" class="filter_menu_item">men</a>
+            <a href="" class="filter_menu_item">woman</a>
+            <a href="" class="filter_menu_item">novelty</a>
+            <a href="" class="filter_menu_item">chart</a>
+        </div>
+<!--    Фильтры    -->
+        <div class="side_bar col-12 col-lg-2 p-6 d-flex flex-lg-column d-inline-flex mt-2">
+            <h5 class="text-uppercase d-none d-lg-block">Choose category</h5>
+            <!--Верх-->
+            <div class="dropdown_filter" id="accordionPanelsStayOpenExample">
+                <div class="">
+                    <p class="m-0 p-0" id="panelsStayOpen-headingOne">
+                        <button class="filter_title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Рубашки и блузки
+                        </button>
+                    </p>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse  " aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="filter_sub">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Рубашки
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                <label class="form-check-label" for="flexCheckDefault1">
+                                    Блузки
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                <label class="form-check-label" for="flexCheckDefault2">
+                                    Койлек
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <!--Размер-->
+            <div class="dropdown_filter" id="accordionPanelsStayOpenExample2">
+                <div class="">
+                    <p class="m-0 p-0" id="panelsStayOpen-headingOne2">
+                        <button class="filter_title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne2" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne2">
+                            Размер
+                        </button>
+                    </p>
+                    <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne2">
+                        <div class="filter_sub">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size1">
+                                <label class="form-check-label" for="size1">
+                                    L
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size2">
+                                <label class="form-check-label" for="size2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size3">
+                                <label class="form-check-label" for="size3">
+                                    S
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size4">
+                                <label class="form-check-label" for="size4">
+                                    X
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size5">
+                                <label class="form-check-label" for="size5">
+                                    XL
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size6">
+                                <label class="form-check-label" for="size6">
+                                    XXL
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Штаны -->
+            <div class="dropdown_filter" id="legs_filter">
+                <div class="">
+                    <p class="m-0 p-0" id="legs_filter-headingOne">
+                        <button class="filter_title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne3" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne3">
+                            <!-- Низ -->
+                        </button>
+                    </p>
+                    <div id="panelsStayOpen-collapseOne3" class="accordion-collapse collapse  " aria-labelledby="legs_filter-headingOne">
+                        <div class="filter_sub">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="legs_filter1">
+                                <label class="form-check-label" for="legs_filter1">
+                                    Штаны
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="legs_filter2">
+                                <label class="form-check-label" for="legs_filter2">
+                                    Брюки
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="legs_filter3">
+                                <label class="form-check-label" for="legs_filter3">
+                                     Джинсы
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="legs_filter4">
+                                <label class="form-check-label" for="legs_filter4">
+                                     Шорты
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Обувь -->
+            <div class="dropdown_filter" id="accordionPanelsStayOpenExample4">
+                <div class="">
+                    <p class="m-0 p-0" id="panelsStayOpen-headingOne4">
+                        <button class="filter_title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne4" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne4">
+                             Обувь
+                        </button>
+                    </p>
+                    <div id="panelsStayOpen-collapseOne4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne4">
+                        <div class="filter_sub">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="foot1">
+                                <label class="form-check-label" for="foot1">
+                                     Кросы
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="foot2">
+                                <label class="form-check-label" for="foot2">
+                                     Кросы
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="foot3">
+                                <label class="form-check-label" for="foot3">
+                                     Кросы
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="foot4">
+                                <label class="form-check-label" for="foot4">
+                                     Кросы
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary ">Change filter</button>
+        </div>
+<!--   Тут начинается одежды     -->
+        <div class="content col-12 col-lg-10 container-lg row d-flex justify-content-around">
+<!--      Первая одежда      -->
+            <div class="item col-8 col-lg-3 mx-auto mx-lg-3 p-0 my-3">
+<!--                Эта ссылка для фото одежды-->
+                <div class="item_image d-flex" style="background-image: url(https://storage.vsemayki.ru/images/0/1/1938/1938947/previews/people_8_woman_hoodie_oversize_front_black_500.jpg)">
+<!--                    Эта ссылка для фото QR-->
+                    <div class="item_qr m-auto" style="background-image: url(https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png)"></div>
+                </div>
+                <p class="item_title text-center fs-5 text-white">BURJEIDE</p>
+                <h6 class="item_price text-center text-white">15990 тг.</h6>
+            </div>
+<!--      Вторая оджеда      -->
+<!--      Первая ссылка для фото а воторая для QR и так для каждого товара      -->
+            <div class="item col-8 col-lg-3 mx-auto mx-lg-3 p-0 my-3">
+                <div class="item_image d-flex" style="background-image: url(https://storage.vsemayki.ru/images/0/2/2044/2044077/previews/people_2_manhoodiefull_front_black_500.jpg)">
+                    <div class="item_qr m-auto" style="background-image: url(https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png)"></div>
+                </div>
+                <p class="item_title text-center text-white fs-5">BURJEIDE</p>
+                <h6 class="item_price text-center text-white">15990 тг.</h6>
+            </div>
+<!--     Треья и тд       -->
+            <div class="item col-8 col-lg-3 mx-auto mx-lg-3 p-0 my-3">
+                <div class="item_image d-flex" style="background-image: url(https://storage.vsemayki.ru/images/0/1/1941/1941345/previews/people_4_manshortfull_front_white_500.jpg)">
+                    <div class="item_qr m-auto" style="background-image: url(https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png)"></div>
+                </div>
+                <p class="item_title text-center text-white fs-5">JEIDE</p>
+                <h6 class="item_price text-center text-white">15990 тг.</h6>
+            </div>
+<!--            -->
+            <div class="item col-8 col-lg-3 mx-auto mx-lg-3 p-0 my-3">
+                <div class="item_image d-flex" style="background-image: url(https://storage.vsemayki.ru/images/0/1/1046/1046776/previews/people_14_child_sweatshirt_front_black_500.jpg)">
+                    <div class="item_qr m-auto" style="background-image: url(https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png)"></div>
+                </div>
+                <p class="item_title text-center text-white fs-5">KENJEIDE</p>
+                <h6 class="item_price text-center text-white">15990 тг.</h6>
+            </div>
+<!--            -->
+            <div class="item col-8 col-lg-3 mx-auto mx-lg-3 p-0 my-3">
+                <div class="item_image d-flex" style="background-image: url(https://storage.vsemayki.ru/images/0/2/2935/2935459/previews/people_11_child_tshirt_front_white_500.jpg)">
+                    <div class="item_qr m-auto" style="background-image: url(https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png)"></div>
+                </div>
+                <p class="item_title text-center text-white fs-5">JEIDE</p>
+                <h6 class="item_price text-center text-white">15990 тг.</h6>
+            </div>
+<!--            -->
+            <div class="item col-8 col-lg-3 mx-auto mx-lg-3 p-0 my-3">
+                <div class="item_image d-flex" style="background-image: url(https://storage.vsemayki.ru/images/0/1/1373/1373565/previews/people_8_shopper_front_white_500.jpg)">
+                    <div class="item_qr m-auto" style="background-image: url(https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png)"></div>
+                </div>
+                <p class="item_title text-center text-white fs-5">SOMKE</p>
+                <h6 class="item_price text-center text-white">15990 тг.</h6>
+            </div>
+        </div>
+    </div>
+<!--  JS Bootstrap  -->
+<script>
+    $(function(){
+        $('.item').height($('.item').width()/0.8);
+
+        $(window).resize(function(){
+            $('.item').height($('.item').width()/0.8);
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>-->
+<!--<script src="js/bootstrap.js"></script>-->
+</body>
+</html>
