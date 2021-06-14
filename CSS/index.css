@@ -1,0 +1,336 @@
+body{
+  min-height: 200vh;
+}
+navibar{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 14px 80px;
+  z-index: 100000;
+  background-color: #0044bf;
+}
+
+navibar .logo{
+  position: relative;
+  text-decoration: none;
+  width: 61px;
+  height: 61px;
+  transition: 0.6s;
+
+}
+
+navibar ul{
+  position: relative;
+  font-family: Helvetica;
+  font-size: 10px;
+  margin-right: 400px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-color: white;
+}
+
+navibar ul li{
+  position: relative;
+  list-style: none;
+}
+
+navibar ul li a{
+  position: relative;
+  margin:0 15px;
+  margin-left: 45px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 18px;
+  background-color: white;
+  background: #0044bf;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+
+#crsl{
+  margin-left: 0;
+}
+
+
+
+.carousel{
+  position: static;
+  width: 100%;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner{
+  margin-top: 100px;
+  margin-left: -100px;
+}
+
+.txt h1{
+  position: absolute;
+  right: 100px;
+  top: 115px;
+  padding-left: 100px;
+
+  background-color: #80acff;
+  height: 510px;
+  width: 610px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(https://image.flaticon.com/icons/svg/130/130882.svg) !important;
+  margin-left: -100px;
+}
+
+ .carousel-control-next-icon {
+   background-image: url(https://image.flaticon.com/icons/svg/130/130884.svg) !important;
+   margin-right: -100px;
+ }
+
+ .products {
+   margin: auto;
+   width: 1320px;
+ }
+
+ .cp-1, .cp-2, .cp-3 {
+   float: right;
+   margin-left: -10px;
+   text-align: center;
+   width: 31.33333%;
+   border: 2px;
+   border-color: red;
+ }
+
+ .cp-1:first-child {
+   margin: 0;
+ }
+
+ .image {
+   background: #fff;
+   border: 1px solid #b9b9b9;
+   display: table-cell;
+   height: 320px;
+   vertical-align: middle;
+   width: 320px;
+ }
+
+ .image img {
+   vertical-align: top;
+   height: 320px;
+   width: 320px;
+ }
+
+ .title {
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 20px;
+   padding: 12px 0;
+   margin-right: 92px;
+ }
+
+ .price {
+   font-size: 18px;
+ }
+
+ .modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal1-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+.close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal2-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal3-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+.close3 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal4-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+.close4 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal5-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+.close5 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal6-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+.close6 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close6:hover,
+.close6:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.footer h1{
+  position: absolute;
+  right: 0;
+  top: 2200px;
+  left: 0;
+  color: white;
+  background-color: #0044bf;
+  height: 510px;
+  align-items: center;
+  text-align: center;
+}
+
+/* SLIDER FROM DIS */
+.wrapper{
+  width: 100%;
+}
+.carousel{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.carousel .card{
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 250px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.carousel .card-1{
+  background: #ed1c24;
+}
+.carousel .card-2{
+  background: #0072bc;
+}
+.carousel .card-3{
+  background: #39b54a;
+}
+.carousel .card-4{
+  background: #f26522;
+}
+.carousel .card-5{
+  background: #630460;
+}
